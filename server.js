@@ -33,7 +33,7 @@ expressApp.post('/imageurl',(req, res) =>{
 })
 
 expressApp.get ('/', (req, res)=>{
-	res.send(database.users);
+	res.send('it is working!');
 })
 expressApp.post('/signin', (req, res)=>{
 	const {email, password} = req.body;
