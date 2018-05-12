@@ -8,10 +8,8 @@ const Clarifai = require('clarifai');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : '@Zo!kou92@',
-    database : 'faceboto'
+    connectionString : process.env.DATABASE_URL,
+    ssl: true,
   }
 });
 
