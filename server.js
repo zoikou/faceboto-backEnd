@@ -14,7 +14,7 @@ const db = knex({
     ssl: true,
   }
 });
-// a variable to declare the express app
+//A variable to declare the express app
 const expressApp = express();
 expressApp.use(bodyParser.json());
 expressApp.use(cors());
